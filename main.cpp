@@ -25,7 +25,7 @@ int main()
     */
 
     Personnage david;
-    Personnage goliath;
+    Personnage goliath = david;
 
     david.afficherPointeurArme();
     goliath.afficherPointeurArme();
