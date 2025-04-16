@@ -12,6 +12,11 @@ Personnage::Personnage(string nomArme, int degatsArme) : m_vie(100), m_mana(100)
     m_arme = new Arme(nomArme, degatsArme); 
 }
 
+Personnage::Personnage(Personnage const& personnageACopier) : m_vie(personnageACopier.m_vie), m_mana(personnageACopier.m_mana), m_arme(nullptr)
+{
+    m_arme = new Arme(*(personnageACopier.m_arme)); 
+}
+
 Personnage::~Personnage()
 {
     delete m_arme;
