@@ -25,10 +25,13 @@ int main()
     */
 
     Personnage david;
-    Personnage goliath = david;
+    //Personnage goliath = david;
 
-    david.afficherPointeurArme();
+    Personnage goliath = david; //Constructeur de copie
+    goliath = david; //operator=
+
     goliath.afficherPointeurArme();
+    david.afficherPointeurArme();
 
     return 0;
 }

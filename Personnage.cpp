@@ -75,3 +75,16 @@ void afficherPointeurArme()
 {
     cout << m_arme << endl;
 }
+
+Personnage& Personnage::operator=(Personnage const& personnageACopier) 
+{
+    if(this != &personnageACopier)
+    //On vérifie que l'objet n'est pas le même que celui reçu en argument
+    {
+        m_vie = personnageACopier.m_vie; //On copie tous les champs
+        m_mana = personnageACopier.m_mana;
+    delete m_arme;
+        m_arme = new Arme(*(personnageACopier.m_arme));
+    }
+    return *this; //On renvoie l'objet lui-même
+}

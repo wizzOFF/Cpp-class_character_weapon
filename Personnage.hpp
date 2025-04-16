@@ -14,6 +14,8 @@ class Personnage
     Personnage(Personnage const& personnageACopier);
     ~Personnage();
 
+    Personnage& Personnage::operator=(Personnage const& personnageACopier); 
+
     void recevoirDegats(int nbDegats);
     void attaquer(Personnage &cible);
     void boirePotionDeVie(int quantitePotion);
