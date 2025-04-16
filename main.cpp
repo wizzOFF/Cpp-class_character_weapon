@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 {
-    // Création des personnages
+    /* Création des personnages
     Personnage david, goliath("Epée aiguisée", 20);
 
     // Au combat !
@@ -22,6 +22,13 @@ int main()
     david.afficherEtat();
     cout << endl << "Goliath" << endl;
     goliath.afficherEtat();
+    */
+
+    Personnage david;
+    Personnage goliath;
+
+    david.afficherPointeurArme();
+    goliath.afficherPointeurArme();
 
     return 0;
 }
