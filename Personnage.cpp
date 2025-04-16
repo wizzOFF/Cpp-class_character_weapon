@@ -2,14 +2,14 @@
 
 using namespace std;
 
-Personnage::Personnage() : m_vie(100), m_mana(100)
+Personnage::Personnage() : m_vie(100), m_mana(100), m_arme(nullptr)
 {
-
+    m_arme = new Arme();
 }
 
-Personnage::Personnage(string nomArme, int degatsArme) : m_vie(100), m_mana(100), m_arme(nomArme, degatsArme)
+Personnage::Personnage(string nomArme, int degatsArme) : m_vie(100), m_mana(100), m_arme(nullptr)
 {
-
+    m_arme = new Arme(nomArme, degatsArme); 
 }
 
 Personnage::~Personnage()
