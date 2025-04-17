@@ -10,7 +10,9 @@
 class Guerrier : public Personnage
 //Signifie : créer une classe Guerrier qui hérite de la classe Personnage
 {
- 
+    public:
+        void frapperAvecUnMarteau() const;
+        //Méthode qui ne concerne que les guerriers
 };
  
 #endif
