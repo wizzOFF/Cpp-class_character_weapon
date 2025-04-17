@@ -23,7 +23,7 @@ int main()
     cout << endl << "Goliath" << endl;
     goliath.afficherEtat();
     */
-
+    /*
     Personnage david;
     //Personnage goliath = david;
 
@@ -32,6 +32,10 @@ int main()
 
     goliath.afficherPointeurArme();
     david.afficherPointeurArme();
-
+    */
+    
+    Personnage marcel("Marcel");
+    marcel.sePresenter();
+    
     return 0;
 }
