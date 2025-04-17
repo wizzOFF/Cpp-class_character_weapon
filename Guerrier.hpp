@@ -23,7 +23,7 @@ void Guerrier::sePresenter() const
     cout << "Je suis un Guerrier redoutable." << endl;
     */
 
-    appel_a_la_fonction_masquee();
+    Personnage::sePresenter();
     //Cela afficherait les informations de base
     
     cout << "Je suis un Guerrier redoutable." << endl;
