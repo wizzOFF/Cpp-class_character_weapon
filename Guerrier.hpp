@@ -17,9 +17,17 @@ class Guerrier : public Personnage
 
 void Guerrier::sePresenter() const
 {
+    /*
     cout << "Bonjour, je m'appelle " << m_nom << "." << endl;
     cout << "J'ai encore " << m_vie << " points de vie." << endl;
     cout << "Je suis un Guerrier redoutable." << endl;
+    */
+
+    appel_a_la_fonction_masquee();
+    //Cela afficherait les informations de base
+    
+    cout << "Je suis un Guerrier redoutable." << endl;
+    //Et ensuite les informations spécifiques
 }
  
 #endif
