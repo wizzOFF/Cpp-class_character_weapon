@@ -14,5 +14,12 @@ class Guerrier : public Personnage
         void frapperAvecUnMarteau() const;
         //Méthode qui ne concerne que les guerriers
 };
+
+void Guerrier::sePresenter() const
+{
+    cout << "Bonjour, je m'appelle " << m_nom << "." << endl;
+    cout << "J'ai encore " << m_vie << " points de vie." << endl;
+    cout << "Je suis un Guerrier redoutable." << endl;
+}
  
 #endif
