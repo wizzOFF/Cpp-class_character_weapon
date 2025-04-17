@@ -33,9 +33,13 @@ int main()
     goliath.afficherPointeurArme();
     david.afficherPointeurArme();
     */
-    
+    /*
     Personnage marcel("Marcel");
     marcel.sePresenter();
-    
+    */
+
+    Guerrier lancelot("Lancelot du Lac");
+    lancelot.sePresenter();
+
     return 0;
 }
