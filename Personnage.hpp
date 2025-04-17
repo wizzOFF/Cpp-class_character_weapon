@@ -36,6 +36,8 @@ class Personnage
         Personnage();
         void recevoirDegats(int degats);
         void coupDePoing(Personnage &cible) const;
+
+        void sePresenter() const;
  
     private: //Privé, mais accessible aux éléments enfants (Guerrier, Magicien)
         int m_vie;
