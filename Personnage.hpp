@@ -7,6 +7,7 @@
 
 class Personnage
 {
+    /*
     public:
 
     Personnage();
@@ -29,6 +30,16 @@ class Personnage
     int m_vie;
     int m_mana;
     Arme* m_arme;
+    */
+
+    public:
+        Personnage();
+        void recevoirDegats(int degats);
+        void coupDePoing(Personnage &cible) const;
+ 
+    private:
+        int m_vie;
+        std::string m_nom;
 };
 
 #endif

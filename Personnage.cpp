@@ -1,7 +1,7 @@
 #include "Personnage.hpp"
 
 using namespace std;
-
+/*
 Personnage::Personnage() : m_vie(100), m_mana(100), m_arme(nullptr)
 {
     m_arme = new Arme();
@@ -87,4 +87,20 @@ Personnage& Personnage::operator=(Personnage const& personnageACopier)
         m_arme = new Arme(*(personnageACopier.m_arme));
     }
     return *this; //On renvoie l'objet lui-même
+}
+*/
+
+Personnage::Personnage() : m_vie(100), m_nom("Jack")
+{
+ 
+}
+ 
+void Personnage::recevoirDegats(int degats)
+{
+    m_vie -= degats;
+}
+ 
+void Personnage::coupDePoing(Personnage &cible) const
+{
+    cible.recevoirDegats(10);
 }
